@@ -1,0 +1,6 @@
+<h2>Airlines list:</h2>
+<div class="border-airlines">
+    <ng-container *ngFor="let airplane of airplaneTable; let odd = odd">
+        <p [ngClass]="{'odd': odd}">Airlines name: {{airplane.name}}, ICAO code: {{airplane.icao_code}}, IATA code: {{airplane.iata_code}}</p>
+    </ng-container>
+</div>

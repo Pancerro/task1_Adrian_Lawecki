@@ -1,0 +1,8 @@
+<div class="header-container">Header</div>
+<div class="content-container">
+  <div class="assets">Assets</div>
+  <div class="main-content">
+    <app-main-content *ngIf="!error" [airplaneTable]="airPlaneTable"></app-main-content>
+    <p *ngIf="error">Error, please refresh website</p>
+  </div>
+</div>
